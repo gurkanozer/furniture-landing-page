@@ -1,69 +1,82 @@
-import React from 'react';
-import {FooterContainer, Container, BrandContainer, BrandLogo, Paragraph,OtherLinks, OtherLinkItem, OtherLink, Copy} from './style';
-import {LinkList} from '../../components';
+import React from "react";
 import {
-  ImFacebook,
-  ImTwitter,
-  ImInstagram
- } from "react-icons/im";
- import {MdOutlineCopyright} from "react-icons/md";
+  FooterContainer,
+  Container,
+  BrandContainer,
+  BrandLogo,
+  Paragraph,
+  OtherLinks,
+  OtherLinkItem,
+  OtherLink,
+  Copy,
+  InnerContainer
+} from "./style";
+import { LinkList } from "../../components";
+import { ImFacebook, ImTwitter, ImInstagram } from "react-icons/im";
+import { MdOutlineCopyright } from "react-icons/md";
 
 const Footer = () => {
   const serviceLinks = [
     {
-        link:"#",
-        text:"Email Marketing"
+      link: "#",
+      text: "Email Marketing",
     },
     {
-        link:"#",
-        text:"Campaigns"
+      link: "#",
+      text: "Campaigns",
     },
     {
-        link:"#",
-        text:"Branding"
+      link: "#",
+      text: "Branding",
     },
-];
-const furnitureLinks = [
-  {
-    link:"#",
-    text:"Beds"
-  },
-  {
-    link:"#",
-    text:"Chair"
-  },
-  {
-    link:"#",
-    text:"All"
-  }
-];
-const socialLinks = [
-  {
-    link:"#",
-    text:` Facebook`,
-    child:<ImFacebook/>
-  },
-  {
-    link:"#",
-    text:` Twitter`,
-    child:<ImTwitter/>
-  },
-  {
-    link:"#",
-    text:` Instagram`,
-    child:<ImInstagram/>
-  }
-]
+  ];
+  const furnitureLinks = [
+    {
+      link: "#",
+      text: "Beds",
+    },
+    {
+      link: "#",
+      text: "Chair",
+    },
+    {
+      link: "#",
+      text: "All",
+    },
+  ];
+  const socialLinks = [
+    {
+      link: "#",
+      text: ` Facebook`,
+      child: <ImFacebook />,
+    },
+    {
+      link: "#",
+      text: ` Twitter`,
+      child: <ImTwitter />,
+    },
+    {
+      link: "#",
+      text: ` Instagram`,
+      child: <ImInstagram />,
+    },
+  ];
   return (
-      <FooterContainer>
-        <Container>
+    <FooterContainer>
+      <Container>
           <BrandContainer>
             <BrandLogo>Panto</BrandLogo>
-            <Paragraph>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</Paragraph>
+            <Paragraph>
+              The advantage of hiring a workspace with us is that givees you
+              comfortable service and all-around facilities.
+            </Paragraph>
           </BrandContainer>
-          <LinkList title="Service" links={serviceLinks}/>
-          <LinkList title="Furniture" links={furnitureLinks}/>
-          <LinkList title="Follow Us" links={socialLinks}/>
+        <InnerContainer>
+          <LinkList title="Service" links={serviceLinks} />
+          <LinkList title="Furniture" links={furnitureLinks} />
+          <LinkList title="Follow Us" links={socialLinks} />
+        </InnerContainer>
+        <InnerContainer>
           <OtherLinks>
             <OtherLinkItem>
               <OtherLink href="#">Terms & Conditions</OtherLink>
@@ -72,9 +85,12 @@ const socialLinks = [
               <OtherLink href="#">Privacy Policy</OtherLink>
             </OtherLinkItem>
           </OtherLinks>
-          <Copy>Copyright <MdOutlineCopyright/> 2022</Copy>
-        </Container>
-      </FooterContainer>
+          <Copy>
+            Copyright <MdOutlineCopyright /> 2022
+          </Copy>
+        </InnerContainer>
+      </Container>
+    </FooterContainer>
   );
 };
 

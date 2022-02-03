@@ -7,8 +7,8 @@ const LinkList = ({ title, links }) => {
         <ListLink isTitle={true}>{title}</ListLink>
       </ListItem>
       {links.map((link, index) => (
-        <ListItem>
-          <ListLink key={index} href={link.link}>
+        <ListItem key={index}>
+          <ListLink href={link.link}>
             {link.child} {link.text}
           </ListLink>
         </ListItem>

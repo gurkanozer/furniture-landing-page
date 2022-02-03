@@ -4,3 +4,4 @@ export {default as PillNav} from './PillNav';
 export {default as ProductCard} from './ProductCard';
 export {default as TestimonialCard} from './TestimonialCard';
 export {default as LinkList} from './LinkList';
+export {default as Navbar} from './Navbar';

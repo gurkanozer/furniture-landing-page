@@ -35,8 +35,19 @@ export const OtherLinks = styled.ul`
     align-items:center;
     justify-content:space-between;
     margin-bottom:2.8rem;
+    @media (max-width:342px){
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    @media (min-width:550px){
+        width:auto;
+        flex-direction:column;
+        align-items:flex-start;
+    }
 `
-export const OtherLinkItem = styled.li``
+export const OtherLinkItem = styled.li`
+    margin-bottom:1.6rem;
+`
 export const OtherLink = styled.a`
     font-size:1.7rem;
     color:var(--color-light-black);
@@ -44,4 +55,15 @@ export const OtherLink = styled.a`
 export const Copy = styled.span`
     font-size:1.7rem;
     color:var(--color-dark-gray);
+`
+
+export const InnerContainer = styled.div`
+    width:100%;
+    margin-bottom:4.4rem;
+    display:flex;
+    flex-direction:column;
+    @media (min-width:550px){
+        flex-direction:row;
+        justify-content:space-between;
+    }
 `

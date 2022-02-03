@@ -30,7 +30,7 @@ export const CardContainer = styled.div`
     justify:content:center;
 
 `
-export const ProfileImage = styled.img`
+export const ProfileContainer = styled.div`
     width:8.2rem;
     height:8.2rem;
     border:1.6rem solid var(--color-white);
@@ -39,13 +39,37 @@ export const ProfileImage = styled.img`
     top:-4.1rem;
     left:50%;
     transform:translateX(-50%);
-
+    &::before{
+        content:'';
+        position:absolute;
+        bottom:2.5rem;
+        left:-3.2rem;
+        background:transparent;
+        width:2rem;
+        height:1.8rem;
+        border-bottom-right-radius:100%;
+        box-shadow: 0.6rem 0.6rem 0 0.5rem var(--color-white);
+    }
+    &::after{
+        content:'';
+        position:absolute;
+        bottom:2.5rem;
+        right:-3.2rem;
+        background:transparent;
+        width:2rem;
+        height:1.8rem;
+        border-bottom-left-radius:100%;
+        box-shadow: -0.6rem 0.6rem 0 0.5rem var(--color-white);
+    }
+`
+export const ProfileImage = styled.img`
 `
 export const ClientName = styled.h4`
     font-size:1.8rem;
     font-weight:var(--fw-bold);
     color:var(--color-black);
     margin-bottom:4rem;
+   
 `
 export const Paragraph = styled.p`
     font-size:1.4rem;

@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyle from "./globalStyle";
 import {
+  Header,
   Hero,
   WhyUs,
   BestSelling,
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
+      <Header/>
       <Hero />
       <WhyUs />
       <BestSelling />

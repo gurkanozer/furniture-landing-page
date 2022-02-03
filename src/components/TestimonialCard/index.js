@@ -4,6 +4,7 @@ import {
   ImageContainer,
   Image,
   CardContainer,
+  ProfileContainer,
   ProfileImage,
   ClientName,
   Paragraph,
@@ -18,9 +19,11 @@ const TestimonialCard = () => {
         <Image src={`${process.env.PUBLIC_URL}/assets/testimonial-1.png`} />
       </ImageContainer>
       <CardContainer>
-        <ProfileImage
-          src={`${process.env.PUBLIC_URL}/assets/profile-image.png`}
-        />
+        <ProfileContainer>
+          <ProfileImage
+            src={`${process.env.PUBLIC_URL}/assets/profile-image.png`}
+          />
+        </ProfileContainer>
         <ClientName>Ibuk Sukijan</ClientName>
         <Paragraph>
           “Makasih Panto, aku sekarang berasa tinggal di apartment karena

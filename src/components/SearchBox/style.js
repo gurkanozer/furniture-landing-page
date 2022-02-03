@@ -39,6 +39,7 @@ export const Button = styled.button`
     bottom:0.8rem;
     right:0.8rem;
     transition: all .3s ease;
+    z-index:var(--zi-level-1);
     &:hover{
         filter:brightness(1.1);
         transform:scale(1.1);
