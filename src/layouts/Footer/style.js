@@ -4,21 +4,26 @@ export const FooterContainer = styled.footer`
 width:100%;
 background: var(--color-light-gray);
 padding-top:9.9rem;
-padding-bottom:12.7rem;
 `
 export const Container = styled.div`
-    padding:0 2.8rem;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:center;
+padding:0 2.8rem;
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+justify-content:center;
+max-width:133.6rem;
+margin:0 auto;
 `
+
 export const BrandContainer = styled.div`
     display:flex;
     flex-direction:column;
     align-items:flex-start;
     justify-content:center;
     margin-bottom:4rem;
+    @media (min-width:550px){
+        max-width:36rem;
+    }
 `
 export const BrandLogo = styled.a`
     font-size:2.8rem;
@@ -44,6 +49,10 @@ export const OtherLinks = styled.ul`
         flex-direction:column;
         align-items:flex-start;
     }
+    @media (min-width:768px){
+        flex-direction:row;
+        gap:2.6rem;
+    }
 `
 export const OtherLinkItem = styled.li`
     margin-bottom:1.6rem;
@@ -65,5 +74,19 @@ export const InnerContainer = styled.div`
     @media (min-width:550px){
         flex-direction:row;
         justify-content:space-between;
+    }
+`
+export const LinkContainer = styled.div`
+   display:flex;
+   width:100%; 
+   align-items:flex-start;
+   justify-content:center;
+   flex-direction:column;
+   @media (min-width:768px){
+       justify-content:space-between;
+       flex-direction:row;
+   }
+   @media (min-width:992px){
+       max-width:62.2rem;
     }
 `

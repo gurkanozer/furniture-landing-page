@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-    padding:11.4rem 0;
+    padding:4.4rem 0;
     background:var(--color-light-gray);
 `
 export const Container = styled.div`
-    margin-top:11.4rem;
     margin-bottom:11.4rem;
     display:flex;
     flex-direction:column;

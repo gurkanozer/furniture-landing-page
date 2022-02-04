@@ -11,11 +11,12 @@ export const HeaderContainer = styled.header`
 export const InnerContainer = styled.div`
     width:100%;
     max-width:133.6rem;
-    margin:4.4rem auto 2rem;
+    margin:${({isscrolled})=>isscrolled ? '1.6rem' : '4.4rem'} auto 2rem;
     padding:0 2.8rem;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    
 `
 
 export const Brand = styled.a`
@@ -23,11 +24,17 @@ export const Brand = styled.a`
     font-weight:var(--fw-bold);
     color:var(--color-white);
 `
-export const MenuButton = styled.button`
-    font-size:2.8rem;
-    color:var(--color-white);
-    width:3.2rem;
-    height:3.2rem;
-    padding-top:0.2rem;
-    padding-right:0.2rem;
+export const Button = styled.button`
+font-size:2.8rem;
+color:var(--color-white);
+width:3.2rem;
+height:3.2rem;
+padding-top:0.2rem;
+padding-right:0.2rem;
+
+`
+export const MenuButton = styled(Button)`
+    @media (min-width:992px){
+        display:none;
+    }
 `

@@ -7,6 +7,7 @@ export const Container = styled.div`
     align-items:flex-start;
     justify-content:center;
     margin-bottom:4.8rem;
+    margin-right:2.8rem;
 `
 export const Title = styled.h2`
     margin-bottom:1.6rem;
@@ -18,6 +19,7 @@ export const Title = styled.h2`
 `
 export const Description = styled.p`
     margin-bottom:1.6rem;
+    font-size:1.6rem;
 `
 export const Link = styled.a`
     color:var(--color-orange);

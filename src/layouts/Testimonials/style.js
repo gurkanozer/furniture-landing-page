@@ -6,6 +6,12 @@ export const Section = styled.section`
 `
 export const Container = styled.div`
     padding:0 2.8rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    max-width:133.6rem;
+    margin:14.4rem auto 0;
 `
 export const Title = styled.h2`
     color:var(--color-orange);

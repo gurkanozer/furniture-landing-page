@@ -8,8 +8,8 @@ const Testimonials = () => {
           <Container>
             <Title>Testimonials</Title>
             <SubTitle>Our Client Reviews</SubTitle>
-          </Container>
           <TestimonialCard/>
+          </Container>
       </Section>
   );
 };

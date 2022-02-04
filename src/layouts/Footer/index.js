@@ -9,7 +9,8 @@ import {
   OtherLinkItem,
   OtherLink,
   Copy,
-  InnerContainer
+  InnerContainer,
+  LinkContainer
 } from "./style";
 import { LinkList } from "../../components";
 import { ImFacebook, ImTwitter, ImInstagram } from "react-icons/im";
@@ -64,6 +65,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <Container>
+        <InnerContainer>
           <BrandContainer>
             <BrandLogo>Panto</BrandLogo>
             <Paragraph>
@@ -71,11 +73,12 @@ const Footer = () => {
               comfortable service and all-around facilities.
             </Paragraph>
           </BrandContainer>
-        <InnerContainer>
-          <LinkList title="Service" links={serviceLinks} />
-          <LinkList title="Furniture" links={furnitureLinks} />
-          <LinkList title="Follow Us" links={socialLinks} />
-        </InnerContainer>
+          <LinkContainer>
+            <LinkList title="Service" links={serviceLinks} />
+            <LinkList title="Furniture" links={furnitureLinks} />
+            <LinkList title="Follow Us" links={socialLinks} />
+            </LinkContainer>
+          </InnerContainer>
         <InnerContainer>
           <OtherLinks>
             <OtherLinkItem>

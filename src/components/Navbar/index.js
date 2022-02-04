@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Container,
   CloseButton,
@@ -21,7 +21,7 @@ const Navbar = ({ isActive, handleClose }) => {
     } 
     else{ 
       target.classList.add("active");
-      target.parentElement.querySelector('ul').style.display = 'block';
+      target.parentElement.querySelector('ul').style.display = 'flex';
     }
   };
   return (
