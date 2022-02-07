@@ -10,12 +10,13 @@ export const Container = styled.div`
     display:flex;
     flex-direction:column;
     margin-top:8rem;
+    margin-bottom:8rem;
     border-radius:2.8rem;
 `
 export const Header = styled.div``
 export const Image = styled.img`
     margin-top:-5rem;
-    max-height:33rem;
+    height:33rem;
     object-fit:cover;
 `
 export const Body = styled.div`

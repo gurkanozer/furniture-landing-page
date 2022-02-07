@@ -14,24 +14,33 @@ import {
   PlusIcon
 } from "./style";
 
-const ProductCard = () => {
+const ProductCard = ({data}) => {
+  const setStars = () =>{
+    let item = [];
+    for(let i = 0; i < data.stars -1 ; i++){
+      item.push(i);
+    }
+    return (
+      <StarContainer>
+      {  item.map(e => 
+          <Star key={e}/>
+        )}
+    </StarContainer>
+    )
+  }
   return (
     <Container>
       <Header>
-        <Image src={`${process.env.PUBLIC_URL}/assets/chair1.png`} />
+        <Image src={`${process.env.PUBLIC_URL}/assets/${data.img}`} />
       </Header>
       <Body>
-        <CategoryTitle>Chair</CategoryTitle>
-        <ProductName>Nyantuy Chair</ProductName>
-        <StarContainer>
-          <Star />
-          <Star />
-          <Star />
-          <Star />
-          <Star />
-        </StarContainer>
+        <CategoryTitle>{data.category}</CategoryTitle>
+        <ProductName>{data.productName}</ProductName>
+        {
+          setStars()
+        }
         <PriceContainer>
-          <ProductPrice>$921</ProductPrice>
+          <ProductPrice>${data.price}</ProductPrice>
           <AddButton aria-label="Add this item to cart"><PlusIcon/></AddButton>
         </PriceContainer>
       </Body>

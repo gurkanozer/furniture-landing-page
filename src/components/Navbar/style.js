@@ -86,10 +86,10 @@ export const SubItem = styled.div`
 
 `
 export const List = styled.ul`
-@media (min-width:992px){
-    display:flex;
-}
-`
+    @media (min-width:992px){
+        display:flex;
+    }
+    `
 
 export const ListItem = styled.li`
     font-size:1.8rem;
@@ -102,7 +102,7 @@ export const ListItem = styled.li`
     @media (min-width:992px){
         padding:1.6rem;
     }
-`
+    `
 export const Link = styled.a`
-   color:inherit; 
-`
+    color:inherit;
+    `

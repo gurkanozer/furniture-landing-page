@@ -23,3 +23,9 @@ export const SubTitle = styled.h3`
     font-size:3.6rem;
     margin-bottom:2.8rem;
 `
+export const TestimonialSlider = styled.div`
+width:100%;
+    max-width:1440px;
+    margin:0 auto;
+    margin-bottom:4.4rem;
+`

@@ -12,22 +12,21 @@ import {
   Star,
 } from "./style";
 
-const TestimonialCard = () => {
+const TestimonialCard = ({data}) => {
   return (
     <Container>
       <ImageContainer>
-        <Image src={`${process.env.PUBLIC_URL}/assets/testimonial-1.png`} />
+        <Image src={`${process.env.PUBLIC_URL}/assets/${data.productImg}`} />
       </ImageContainer>
       <CardContainer>
         <ProfileContainer>
           <ProfileImage
-            src={`${process.env.PUBLIC_URL}/assets/profile-image.png`}
+            src={`${process.env.PUBLIC_URL}/assets/${data.profileImg}`}
           />
         </ProfileContainer>
-        <ClientName>Ibuk Sukijan</ClientName>
+        <ClientName>{data.userName}</ClientName>
         <Paragraph>
-          “Makasih Panto, aku sekarang berasa tinggal di apartment karena
-          barang-barang yang terlihat mewah“
+          {data.description}
         </Paragraph>
         <StarContainer>
           <Star />
