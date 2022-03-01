@@ -20,7 +20,7 @@ const Header = () => {
         setNavbarIsActive(false);
         body.classList.remove('overlay-active')
     }
-  },[width]);
+  },[width, body]);
 
   useEffect(()=>{
     if(scrollY > 120){

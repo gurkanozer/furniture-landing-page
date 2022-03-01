@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import {Section, Container,Title, ContentContainer} from './style';
-import {MdTrendingFlat} from 'react-icons/md';
 import {InfoCard} from '../../components';
 
 const WhyUs = () => {
