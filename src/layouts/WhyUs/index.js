@@ -1,9 +1,9 @@
-import React,{useState} from 'react';
+import React from 'react';
 import {Section, Container,Title, ContentContainer} from './style';
 import {InfoCard} from '../../components';
 
 const WhyUs = () => {
-  const [content,setContent] = useState([
+  const content =[
     {
       title:"Luxury facilities",
       description:"The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.",
@@ -19,7 +19,7 @@ const WhyUs = () => {
       description:"We provide many unique work space choices so that you can choose the workspace to your liking.",
       link:"#"
     }
-  ]);
+  ];
   return (
     <Section>
         <Container>

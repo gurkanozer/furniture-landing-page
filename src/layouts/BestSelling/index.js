@@ -12,9 +12,9 @@ import "swiper/css";
 import {useWindowDimensions} from '../../hooks';
 
 const BestSelling = () => {
-  const [data, setData] = useState(["chair", "beds", "sofa", "lamp"]);
+  const data = ["chair", "beds", "sofa", "lamp"];
   const [slidesPerView, setSlidesPerView] = useState(1);
-  const [products, setProducts] = useState([
+  const products =[
     {
       productName:'Nyantuy Chair',
       category:'Chair',
@@ -43,7 +43,7 @@ const BestSelling = () => {
       stars:5,
       price:'1245'
     }
-  ]);
+  ];
   const {width} = useWindowDimensions(); 
   const [activeTab, setActiveTab] = useState("chair");
   const handleOnClick = (e) => {
@@ -58,7 +58,8 @@ const BestSelling = () => {
       setSlidesPerView(2);
     }
     else setSlidesPerView(1)
-  },[width])
+  },[width]);
+
   return (
     <Section>
       <Container>

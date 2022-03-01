@@ -6,7 +6,7 @@ const PillNav = ({data, onClick, activeTab}) => {
       <Container>
             {
                 data.map((item,index)=>
-                    <Item onClick={onClick} key={index} value={item} className={activeTab == item ? 'active':''}>{item}</Item>
+                    <Item onClick={onClick} key={index} value={item} className={activeTab === item ? 'active':''}>{item}</Item>
                 )
             }
       </Container>
